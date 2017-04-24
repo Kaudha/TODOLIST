@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ToDoList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/yeti/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+</head>
+
+<body>
+    <!Style>
+    <style>
+        body {
+            background: url("../img/pink_dust.png");
+        }
+
+        .centered-form .panel {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+            color: #4e5d6c;
+        }
+
+        .centered-form {
+            margin-top: 60px;
+        }
+    </style>
+
+    <!section Home>
+    <div data-role="page" id="login" data-title="Home" data-dom-cache="true" class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="pannel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">ToDoList</h1>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus justo. Praesent nec dolor eu nunc bibendum facilisis.
+                        Nullam sit amet mi nec risus egestas mollis at non eros. Pellentesque at efficitur quam, pellentesque posuere turpis. 
+                        Sed sodales odio ac ligula imperdiet aliquam. Sed quis orci vitae sapien molestie tempor. Curabitur non egestas ligula. 
+                        Curabitur tempor gravida mi, vitae faucibus dolor pulvinar vel. Curabitur porta bibendum tellus a aliquet.<br>
+
+                        Nulla pharetra ullamcorper dolor non sodales. Sed congue libero et libero dapibus, nec commodo erat iaculis. 
+                        Maecenas lobortis augue nec interdum accumsan. Proin consequat mollis lorem, at bibendum justo egestas a. Morbi in nulla egestas, maximus dolor in, rutrum urna.
+                        In luctus nisl arcu, at maximus sapien pharetra a. Curabitur et blandit arcu. Nam vitae dolor eget urna mollis volutpat nec nec tellus.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#Login" data-transition="pop">Connexion</a>
+            </div>
+        </div>
+    </div>
+    <!section Login>
+    <div data-role="page" id="Login" data-title="Login" class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Connexion</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control input-sm" placeholder="Adresse Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control input-sm" placeholder="Mot de passe">
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input name="remember" type="checkbox" value="Remember Me"> Se souvenir de moi
+                                <a href="/forgot" class="pull-right">Mot de passe oublié?</a>
+                            </label>
+                        </div>
+
+                        <input type="submit" value="Se Connecter" class="btn btn-info btn-block">
+
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#Register" data-transition="pop">Vous n'avez pas de compte? S'inscrire</a>
+            </div>
+        </div>
+    </div>
+
+    <!section register>
+    <div role-page="page" id="Register" data-title="Register" class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">x
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Créer un compte <small>C'est gratuit!</small></h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" class="form-control input-sm" placeholder="Prénom">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" class="form-control input-sm" placeholder="Nom">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control input-sm" placeholder="Adresse Email">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control input-sm" placeholder="Mot de passe">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password_confirmation" class="form-control input-sm" placeholder="Confirmer le mot de passe">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="S'inscrire" class="btn btn-info btn-block">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
