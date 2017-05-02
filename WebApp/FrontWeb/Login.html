@@ -5,7 +5,6 @@
     <title>ToDoList</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/yeti/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -30,32 +29,31 @@
     </style>
 
     <!section Home>
-    <div data-role="page" id="login" data-title="Home" class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-            <div class="pannel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title">ToDoList</h1>
-                </div>
-                <div class="panel-body">
-                    <form>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus justo. Praesent nec dolor eu nunc bibendum facilisis.
-                            Nullam sit amet mi nec risus egestas mollis at non eros. Pellentesque at efficitur quam, pellentesque posuere turpis.
-                            Sed sodales odio ac ligula imperdiet aliquam. Sed quis orci vitae sapien molestie tempor. Curabitur non egestas ligula.
-                            Curabitur tempor gravida mi, vitae faucibus dolor pulvinar vel. Curabitur porta bibendum tellus a aliquet.<br>
-
-                            Nulla pharetra ullamcorper dolor non sodales. Sed congue libero et libero dapibus, nec commodo erat iaculis.
-                            Maecenas lobortis augue nec interdum accumsan. Proin consequat mollis lorem, at bibendum justo egestas a. Morbi in nulla egestas, maximus dolor in, rutrum urna.
-                            In luctus nisl arcu, at maximus sapien pharetra a. Curabitur et blandit arcu. Nam vitae dolor eget urna mollis volutpat nec nec tellus.<br>
-                        </p>
-                    </form> 
-                </div>
+    <div data-role="page" id="Home" data-title="Home" data-dialog="true"class="row centered-form">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title text-center">ToDoList</h1>
             </div>
-            <div class="text-center">
-                <a href="#Login" data-transition="flow">Connexion</a>
+            <div class="panel-body">
+                <form>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget purus justo. Praesent nec dolor eu nunc bibendum facilisis.
+                        Nullam sit amet mi nec risus egestas mollis at non eros. Pellentesque at efficitur quam, pellentesque posuere turpis.
+                        Sed sodales odio ac ligula imperdiet aliquam. Sed quis orci vitae sapien molestie tempor. Curabitur non egestas ligula.
+                        Curabitur tempor gravida mi, vitae faucibus dolor pulvinar vel. Curabitur porta bibendum tellus a aliquet.<br>
+
+                        Nulla pharetra ullamcorper dolor non sodales. Sed congue libero et libero dapibus, nec commodo erat iaculis.
+                        Maecenas lobortis augue nec interdum accumsan. Proin consequat mollis lorem, at bibendum justo egestas a. Morbi in nulla egestas, maximus dolor in, rutrum urna.
+                        In luctus nisl arcu, at maximus sapien pharetra a. Curabitur et blandit arcu. Nam vitae dolor eget urna mollis volutpat nec nec tellus.<br>
+                    </p>
+                </form>
+            </div>
+            <div class="text-center panel-footer">
+                <a href="#Login" style="text-decoration:none" data-transition="pop"><input type="submit" value="Connexion" class="btn btn-info btn-block"></a>
             </div>
         </div>
     </div>
+
     <!section Login>
     <div data-role="page" id="Login" data-title="Login" data-dialog="true" class="row centered-form">
         <div class="panel panel-default">
@@ -73,7 +71,7 @@
                         <input type="password" name="password" class="form-control input-sm" placeholder="Mot de passe">
                     </div>
 
-                    <div class="checkbox">
+                    <div>
                         <label>
                             <input name="remember" type="checkbox" value="Remember Me"> Se souvenir de moi
                             <a href="/forgot" class="pull-right">Mot de passe oublié?</a>
@@ -84,10 +82,12 @@
 
                 </form>
             </div>
+            <div class="text-center panel-footer" style="background-color:#f5f5f5">
+                <a href="#Register" data-transition="flip">Vous n'avez pas de compte? S'inscrire</a>
+            </div>
         </div>
-        <div class="text-center">
-            <a href="#Register" data-transition="flip">Vous n'avez pas de compte? S'inscrire</a>
-        </div>
+
+
     </div>
 
     <!section register>
