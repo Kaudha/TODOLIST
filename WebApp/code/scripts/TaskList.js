@@ -21,11 +21,12 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-$(document).ready(function () {
-    $('.divTaskPage ul').on('click',function () {
-        $(this).parent('li').addClass('checked');
-    });
-});
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 
 // Create a new list item when clicking on the "Add" button
