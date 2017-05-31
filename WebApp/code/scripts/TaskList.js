@@ -1,6 +1,6 @@
 ﻿
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsByTagName("#myUL li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
@@ -22,10 +22,10 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
+list.addEventListener('click', function (ev) {
+    if (ev.target.tagName === 'li') {
+        ev.target.classList.toggle('checked');
+    }
 }, false);
 
 
@@ -36,7 +36,7 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-        alert("Ecrivez votre tâche!");
+        alert("Vous devez écrire quelque chose!");
     } else {
         document.getElementById("myUL").appendChild(li);
     }
