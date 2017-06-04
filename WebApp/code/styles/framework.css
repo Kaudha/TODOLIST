@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------
+﻿/*------------------------------------------------------------------
 [Framework Stylesheet]
 
 Project:	Boxed | Epsilon Framework
@@ -64,8 +64,28 @@ License:        You may not reuse or redistribute this framework
 */ 
 
 
-/*	1. Reset  */ 
-
+/*	1. Reset  */
+.exception{
+   position: relative;
+    overflow: initial;
+    /*padding: 0;
+    margin: 0;
+    -webkit-appearance: initial;
+    -moz-appearance: initial;
+   /* margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: none;
+    font-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    padding: 0;*/
+}
 * {
 	appearance:normal;
 	-webkit-appearance: none;
