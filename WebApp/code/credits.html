@@ -13,11 +13,13 @@
     <link href="styles/swipebox.css" rel="stylesheet" type="text/css">
     <link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="styles/animate.css" rel="stylesheet" type="text/css">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="scripts/jquery.js"></script>
     <script type="text/javascript" src="scripts/jqueryui.js"></script>
     <script type="text/javascript" src="scripts/framework.plugins.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
 
 </head>
 <body>
@@ -74,84 +76,91 @@
 
 
         <!-- Page Content-->
-        <div id="content" class="snap-content">
+        <div id="content" class="snap-content" style="background-image:url(images/To_Do_List.png); ">
             <div class="header">
                 <a href="#" class="sidebar-deploy"><i class="fa fa-navicon"></i></a>
                 <h3>TODOLIST</h3>
                 <a href="contact.html" class="contact-deploy"><i class="fa fa-envelope-o"></i></a>
                 <a href="#" class="sign-out"><i class="fa fa-sign-out" aria-hidden="false"></i></a>
             </div>
-
-            <div class="coverpage-slider" data-snap-ignore="true">
-                <div>
-                    <div class="overlay dark-overlay"></div>
-                    <div class="coverpage-image bg1 coverpage-style-1">
-                        <img style="width:150px; height:28px; left:50%; margin-left:-75px; top:50%; margin-top:-90px;" src="images/logo-light.png">
-                        <p style="top:50%; margin-top:-50px;">
-                            Bla bla bla bla bla bla bla
-                            bla bla bla bla bla
-                        </p>
+            <div>
+                <div class="container" style="margin-top:80px;z-index:99999; background-color:rgba(0, 0, 0, 0.5); border-color:black; padding-bottom:20px; border-radius:10px">
+                    <div class="row" style="margin-bottom:20px; margin-top:20px">
+                        <div class="col">
+                            <h2 class="text-center" style="color:white">Les développeurs</h2>
+                        </div>
                     </div>
-                </div>
-
-                <div>
-                    <div class="overlay dark-overlay"></div>
-                    <div class="coverpage-image bg2 coverpage-style-3">
-                        <i class="fa fa-clock-o" style="left:50%; top:50%; margin-top:-120px;"></i>
-                        <p style="left:50%; margin-left:-140px; top:50%; margin-top:-20px;">
-                            Bla bla bla bla bla bla bla
-                            bla bla bla bla bla
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="overlay dark-overlay"></div>
-                    <div class="coverpage-image bg3 coverpage-style-2">
-                        <p style="height:100px; top:50%; margin-top:20px;">
-                            Bla bla bla bla bla bla bla
-                            bla bla bla bla bla
-                        </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="row" style="margin-bottom:40px">
+                                <div class="col">
+                                    <h3 class="text-center" style="color:white">Back</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/arthurd.jpg" style="width:200px; height:200px; border:1px solid grey; border-radius:100px" class="center-block" />
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px; margin-bottom:20px">
+                                        <div class="col">
+                                            <h4 class="text-center" style="color:white">Arthur Daniel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/arthurb.jpg" style="width:200px; height:200px; border:1px solid grey; border-radius:100px" class="center-block" />
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px; margin-bottom:20px">
+                                        <div class="col">
+                                            <h4 class="text-center" style="color:white">Arthur Daniel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="row" style="margin-bottom:40px">
+                                <div class="col">
+                                    <h3 class="text-center" style="color:white">Front</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/arthurd.jpg" style="width:200px; height:200px; border:1px solid grey; border-radius:100px" class="center-block" />
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px; margin-bottom:20px">
+                                        <div class="col">
+                                            <h4 class="text-center" style="color:white">Arthur Daniel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/arthurd.jpg" style="width:200px; height:200px; border:1px solid grey; border-radius:100px" class="center-block" />
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px">
+                                        <div class="col">
+                                            <h4 class="text-center" style="color:white">Arthur Daniel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
-        <div class="share-bottom">
-            <h3>Partager la page</h3>
-            <div class="share-socials-bottom">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
-                    <i class="fa fa-facebook facebook-color"></i>
-                    Facebook
-                </a>
-                <a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
-                    <i class="fa fa-twitter twitter-color"></i>
-                    Twitter
-                </a>
-                <a href="https://plus.google.com/share?url=http://www.themeforest.net">
-                    <i class="fa fa-google-plus google-color"></i>
-                    Google
-                </a>
-
-                <a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&media=https://0.s3.envato.com/files/63790821/profile-image.jpg&description=Themes%20and%20Templates">
-                    <i class="fa fa-pinterest-p pinterest-color"></i>
-                    Pinterest
-                </a>
-                <a href="sms:">
-                    <i class="fa fa-comment-o sms-color"></i>
-                    Message
-                </a>
-                <a href="mailto:?&subject=Check this page out!&body=http://www.themeforest.net">
-                    <i class="fa fa-envelope-o mail-color"></i>
-                    Email
-                </a>
-            </div>
-            <a href="#" class="close-share-bottom">Fermer</a>
-        </div>
-
     </div>
-
 </body>
 
