@@ -417,7 +417,7 @@ $(function () {
             var $ft = $('<div class="lobilist-form-footer">');
             $('<button>', {
                 'class': 'btn btn-primary btn-sm btn-add-todo',
-                html: 'Add'
+                html: 'Ajouter'
             }).appendTo($ft);
             $('<button>', {
                 type: 'button',
@@ -770,7 +770,7 @@ $(function () {
             if (me.$options.enableTodoRemove) {
                 $itemControlsDiv.append($('<div>', {
                     'class': 'delete-todo todo-action',
-                    html: '<i class="glyphicon glyphicon-remove"></i>'
+                    html: '<i href="" class="glyphicon glyphicon-remove"></i>'
                 }).click(function () {
                     me._onDeleteItemClick($(this).closest('li').data('lobiListItem'));
                 }));

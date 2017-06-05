@@ -417,7 +417,7 @@ $(function () {
             var $ft = $('<div class="lobilist-form-footer">');
             $('<button>', {
                 'class': 'btn btn-primary btn-sm btn-add-todo',
-                html: 'Add'
+                html: 'Ajouter'
             }).appendTo($ft);
             $('<button>', {
                 type: 'button',

@@ -147,6 +147,18 @@ body{
     z-index:1;
 }
 
+.header .sign-out {
+    float: right;
+    margin-top: -60px;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-right:40px;
+}
+
 .header h3{
     float:left;
     width:100%;

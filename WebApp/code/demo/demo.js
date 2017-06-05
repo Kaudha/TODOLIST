@@ -315,10 +315,10 @@ $(function () {
 
     $('#actions-by-ajax').lobiList({
         actions: {
-            load: 'demo/example1/load.json',
-            insert: 'demo/example1/insert.php',
-            delete: 'demo/example1/delete.php',
-            update: 'demo/example1/update.php'
+            load: '/task/load',
+            insert: '/task/ajouter',
+            delete: '/task/supprimer',
+            update: '/task/update'
         },
         afterItemAdd: function(){
             console.log(arguments);
