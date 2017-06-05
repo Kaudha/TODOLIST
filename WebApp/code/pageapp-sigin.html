@@ -88,9 +88,9 @@
                     Créer un compte ci-desssous, c'est vraiment facile! 
                 </p>
                 <form action="index.html" method="POST">
-                <input type="text" class="signup-email" placeholder="Email">
-                <input type="text" class="signup-password" placeholder="Mot de passe" style="margin-bottom:0px">
-                <input type="text" class="signup-password" placeholder="Confirmez le mot de passe">
+                <input type="email" class="signup-email" name="email" placeholder="Email">
+                <input type="password" class="signup-password" id="password" name="password" placeholder="Mot de passe" style="margin-bottom:0px">
+                <input type="password" class="signup-password" id="confpassword" name="confpassword"placeholder="Confirmez le mot de passe">
                 <div class="one-half" style="">
                     <input type="submit" value="S'inscrire" class="button button-green full-button" style="height:40px; cursor: pointer">
                 </div>               
@@ -138,6 +138,21 @@
     </div>
     
 </div>
+    <script>
+        var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confpassword");
+
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Les mots de passes ne correspondent pas");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
 
 </body>
 

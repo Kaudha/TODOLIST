@@ -467,7 +467,7 @@ $(function () {
             $('<button>', {
                 type: 'button',
                 'class': 'btn-link btn-show-form',
-                'html': 'Add new'
+                'html': 'Ajouter'
             }).click(function () {
                 me._resetForm();
                 me.$form.removeClass('hide');
