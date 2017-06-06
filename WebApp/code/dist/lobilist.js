@@ -395,7 +395,7 @@ $(function () {
                     'type': 'text',
                     name: 'title',
                     'class': 'form-control',
-                    placeholder: 'TODO title'
+                    placeholder: 'TODO titre'
                 })
             ).appendTo($form);
             $('<div class="form-group">').append(
@@ -411,7 +411,7 @@ $(function () {
                     'type': 'text',
                     name: 'dueDate',
                     'class': 'form-control',
-                    placeholder: 'Due Date'
+                    placeholder: 'Date'
                 })
             ).appendTo($form);
             var $ft = $('<div class="lobilist-form-footer">');

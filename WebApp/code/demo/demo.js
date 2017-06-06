@@ -315,7 +315,7 @@ $(function () {
 
     $('#actions-by-ajax').lobiList({
         actions: {
-            load: '/task/load',
+            load: 'demo/example1/load.json',
             insert: '/task/ajouter',
             delete: '/task/supprimer',
             update: '/task/update'
