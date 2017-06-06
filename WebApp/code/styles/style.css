@@ -46,22 +46,27 @@ body{
 /*Backgrounds */
 
 .bg1{
-    background-image:url(../images/pictures/1.jpg);   
+    background-image:url(../images/pictures/motif-marocain-turquoise.jpg);   
     background-position:center center;
 }
 
 .bg2{
-    background-image:url(../images/pictures/2.jpg);   
+    background-image:url(../images/pictures/motif01-01.png);   
     background-position:center center;
 }
 
 .bg3{
-    background-image:url(../images/pictures/3.jpg);   
+    background-image:url(../images/pictures/beautiful-background-turquoise-pattern-patterns.jpg);   
     background-position:center center;
 }
 
 .bg4{
     background-image:url(../images/pictures/4.jpg);   
+    background-position:center center;
+}
+
+.bg5{
+    background-image:url(../images/pictures/fond_todolist.jpg);
     background-position:center center;
 }
 
@@ -140,6 +145,18 @@ body{
     text-align:center;
     position:relative;
     z-index:1;
+}
+
+.header .sign-out {
+    float: right;
+    margin-top: -60px;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-right:40px;
 }
 
 .header h3{
