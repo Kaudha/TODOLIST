@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* On utilise les sessions */
-app.use(sessions({secret: 'zbla'}))
+app.use(sessions({secret: 'zbla', saveUninitialized: false, resave: false}))
 
 
 /* Inscription */
